@@ -3,13 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo App - Webpack Test</title>
+    <title>Odins • Todo</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>Webpack Test Page</h1>
-        <p id="status">If you see this and the background is dark green, everything is working!</p>
-        <button id="test-btn">Click Me</button>
+    <div class="app">
+        <!-- Header -->
+        <div id="header-container"></div>
+
+        <div class="main">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="sidebar-header">
+                    <h2><i class="fas fa-folder"></i> Projects</h2>
+                </div>
+                <div id="add-project-container"></div>
+                <div id="project-list-container"></div>
+            </div>
+
+            <!-- Todo Content -->
+            <div class="content">
+                <div class="todo-header">
+                    <h1 id="current-project-title">My Tasks</h1>
+                </div>
+                
+                <div id="add-todo-container"></div>
+                <div id="todos-container"></div>
+            </div>
+        </div>
     </div>
 
     <script src="./js/bundle.js"></script>
