@@ -1,1 +1,1 @@
-Project [Odins-TODO-LIST](https://www.theodinproject.com/lessons/node-path-javascript-todo-list)
+Project [Odins-TODO-LIst](https://www.theodinproject.com/lessons/node-path-javascript-todo-list)
