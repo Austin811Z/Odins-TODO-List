@@ -80,7 +80,16 @@ module.exports = (env, argv) => {
         },
 
         performance: {
-            hints: isProduction ? 'warning' : false
+            hints: isProduction ? 'warning' : false,
+            maxEntrypointSize: 512000,
+            maxAssetSize: 512000
+        },
+
+        optimization: {
+            minimize: isProduction,
+            splitChunks: isProduction ? {
+                chunks: 'all',
+            } : false
         }
     };
 };

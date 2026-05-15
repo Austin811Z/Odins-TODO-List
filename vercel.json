@@ -1,0 +1,30 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "version": 2,
+  "name": "odins-todo-app",
+  
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/dist/index.html"
+    }
+  ],
+  
+  "cleanUrls": true,
+  "trailingSlash": false,
+  
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    }
+  ]
+}
